@@ -1,0 +1,439 @@
+﻿<html>
+<head>
+    <title>Result_Page</title>
+    <link rel="icon" type="image/x-icon" href="logo1.png" />
+    <style type="text/css">
+        .footer 
+        {
+            padding: 0px;
+            margin: 0px;
+            background-color: black;
+            color: rgb(4, 88, 4);
+            font-family: initial;
+            font-size: 20px;
+            height: 30px;
+            margin-top: 0%;
+            width: 100%;
+            padding-top: 0%;
+            text-align: center;
+            margin-bottom: -50px;
+        }
+        body {
+            background-color: whitesmoke;
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+            diplay: block;
+            overflow-y: scroll;
+            height: 2000px;
+        }
+
+        form {
+            align-content: center;
+        }
+
+        .table {
+            padding: 30px 30px 30px 30px;
+            color: darkred;
+            border: 3px dashed gray;
+            width: 100px;
+            height: 200px;
+            font-size: 25px;
+            margin-left: 40%;
+            margin-top: -5px;
+        }
+
+        input {
+            background-color: lightgray;
+            border: 1px groove lightblue;
+            border-radius: 5px;
+            width: 390px;
+            height: 60px;
+            font-size: 20pt;
+            color: black;
+        }
+
+        #grades_table {
+            text-align: center;
+            margin-left: 340px;
+            margin-right: 320px;
+            border: hidden;
+            width: 1400px;
+            height: 900px;
+            <!-- position: fixed; -->
+        }
+
+        #s1, #s2, #s3, #s4, #s5, #s6, #s7 {
+            text-align: left;
+            font-size: 25pt;
+        }
+
+        #headerrow {
+            background-color: forestgreen;
+            font-size: 25px;
+            height: 20px;
+        }
+
+        #subjects {
+            text-align: left;
+            font-size: 30px;
+        }
+
+        .subjectGrades {
+            border-left: hidden;
+            border-right: hidden;
+            border-top: hidden;
+            border-bottom: 2px solid black;
+            margin-right: 30%;
+            margin-left: 30%;
+            margin-top: -20px;
+            text-align: center;
+        }
+
+        .div1 {
+            margin: 0%;
+            height: 121px;
+            padding: 0;
+            background-color: #000000;
+            color: #FFF;
+            margin: 0;
+            position: relative;
+        }
+
+        .c {
+            text-align: left;
+            margin-top: -100px;
+            font-size: 25px;
+            font-weight: 900;
+            font-family: "Comic Sans MS";
+        }
+
+        c.e {
+            font-size: 100px;
+            font-weight: bold;
+            font-family: "Comic Sans MS";
+        }
+
+        aa .uni {
+            text-align: right;
+            color: #FFF;
+            margin-left: 500px;
+            margin-right: -200px;
+            margin-top: 10px;
+            direction: rtl;
+            line-height: 2em;
+            margin-left: -100px;
+            font-family: "times new roman";
+        }
+
+        /* arabic--------black divالعنوان العربي لل--------->*/
+        .aa {
+            color: #FFF;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: -90px;
+            line-height: 1em;
+            font-weight: 900;
+            font-size: 30px;
+            padding-left: 10px;
+        }
+
+        .navigation {
+            background-color: darkgray;
+            padding: 0px;
+            margin: 0px;
+            font-size: x-large;
+            font-family: fantasy;
+            width: 100%;
+        }
+
+        .title {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            width: 100%;
+            list-style: none;
+        }
+
+        .i1, .i2, .i3, .i4, .i5, .i6 {
+            display: inline;
+            padding: 10px;
+        }
+
+        .l1, .l2, .l3, .l4, .l5, .l6 {
+            color: black;
+            text-decoration: none;
+        }
+
+            .l1:hover, .l2:hover, .l3:hover, .l4:hover, .l5:hover, .l6:hover {
+                color: darkgreen;
+                background-color: white;
+                background-size: 100% 100%;
+            }
+
+        .doneBtn:hover {
+            background-color: forestgreen;
+        }
+			
+    </style>
+
+</head>
+<body>
+    <!---->
+    <script language="Javascript">
+
+        alert("Do you want to enter the page?");
+
+        // document.write(name)
+    </script>
+
+    <!--black div and title-->
+    <div class="div1">
+        <center>
+            <img class="img" src="logo.png" width="120" height="120">
+        </center>
+        <p class="c" dir="ltr">  Faculty of computer and  information science<br><span class="e">Ainshams  university </span>
+        <p class="aa" dir="rtl">كـلـــيــة الـحـاسـبـات والـمـعـلـومـات<br> <span class="uni"> جـامـعـة عـيـن  شـمـس  </span></p>
+    </div>
+    <!--other page (login,newcomers,etc..)-->
+    <div class="navigation">
+
+        <UL class="title">
+
+            <li class="i1"><a class="l1" href="C:\Users\Loai\Documents\HTML\project\Home page.html" target="blank">Home</a></li>
+            <li class="i3"><a class="l3" href="C:\Users\Loai\Documents\HTML\project\about us page\about us.html" target="blank">About us</a></li>
+            <li class="i4"><a class="l4" href="C:\Users\Loai\Documents\HTML\project\year result.html" target="blank">year result</a></li>
+            <li class="i5"><a class="l5" href="C:\Users\Loai\Documents\HTML\project\new_new.html" target="blank">Newcomers</a></li>
+            <li class="i6"><a class="l6" href="C:\Users\Loai\Documents\HTML\project\login.html" target="blank">login & register</a></li>
+
+        </UL>
+    </div>
+    <br>
+
+    <!--enter Name and id to get the result-->
+
+    <form id="form">
+        <table class="table" align="center">
+            <tr>
+                <td><b>Username</b><br><input id="input1" type="text" placeholder="Enter username" /> </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Password</b><br><input id="input2" type="password" placeholder="Enter password" />
+                </td>
+                <!--onclick you wil get the result-->
+            <tr>
+                <td><br><input type="button" value="Done" style="height:100%; width:30%; " class="doneBtn" onclick="Done();" />
+            </tr>
+
+            <!--<tr>
+                <td><b>Department</b> </td>
+                <td><input id="st3" type="text"/></td>
+                <td> &nbsp; &nbsp; &nbsp;</td>
+                <td><b>Academic Year</b></td>
+                <td><input id="st4" type="number" min="1" max="4"/></td>
+            </tr> -->
+        </table>
+        <!--title of Subject grades-->
+        <div class="subjectGrades">
+            <h2 style="font-size:30pt; color:darkred;">
+                <!--title of the subjectgrades table-->
+                <br>
+                <center>
+                    <b>Subject Grades</b>
+                </center>
+            </h2>
+        </div>
+        <br><br><br>
+        <table id="grades_table" align="center">
+            <tr id="headerrow">
+                <th>Subjects</th>
+                <th>MidTerm <br>(20)</th>
+                <th>Quizes <br>(20)</th>
+                <th>Final<br> (60)</th>
+                <th>Total<br> (100)</th>
+            </tr>
+            <tr id="s1">
+                <td>Fundamentals of Structured Programming</td>
+                <td id="ms1">-</td>
+                <td id="ps1">-</td>
+                <td id="fs1">-</td>
+                <td id="ts1">-</td>
+            </tr>
+            <tr id="s2">
+                <td>Introduction to Biochemistry</td>
+                <td id="ms2">-</td>
+                <td id="ps2">-</td>
+                <td id="fs2">-</td>
+                <td id="ts2">-</td>
+            </tr>
+            <tr id="s3">
+                <td>Ethics</td>
+                <td id="ms3">-</td>
+                <td id="ps3">-</td>
+                <td id="fs3">-</td>
+                <td id="ts3">-</td>
+            </tr>
+            <tr id="s4">
+                <td>Mathimatics(2)</td>
+                <td id="ms4">-</td>
+                <td id="ps4">-</td>
+                <td id="fs4">-</td>
+                <td id="ts4">-</td>
+            </tr>
+            <tr id="s4">
+                <td>Report Writing</td>
+                <td id="ms5">-</td>
+                <td id="ps5">-</td>
+                <td id="fs5">-</td>
+                <td id="ts5">-</td>
+            </tr>
+            <tr id="s5">
+                <td>English language(2)</td>
+                <td id="ms6">-</td>
+                <td id="ps6">-</td>
+                <td id="fs6">-</td>
+                <td id="ts6">-</td>
+            </tr>
+            <tr id="s7">
+                <td>Humanities</td>
+                <td id="ms7">-</td>
+                <td id="ps7">-</td>
+                <td id="fs7">-</td>
+                <td id="ts7">-</td>
+            </tr>
+        </table>
+        <p class="footer">copyright&copy;2020..All reserved to youth team&reg; </p>
+
+
+        <script>
+
+
+
+            //This function checks if the Username and password are correct or not to display the subjects grades
+            function Done()
+            {
+
+            /* var n1 = window.prompt("Enter setnumber");
+            var p1 = window.prompt("Enter password");*/
+            //var zb =n1+"p";
+            var name=new Array(3);
+            name=["rawan abdel nasser badawi","loai sayed kenawy","Abdelrahman tolba muhamed"];
+            var pass=new Array(3);
+            Pass=["Bio2019_1","Bio2019_2","Bio2019_3"];
+
+            if(window.input1.value==name[0]&&window.input2.value==Pass[0])
+            {
+            // midterm grades for subjects(Rawan)
+            document.getElementById("ms1").innerHTML = "14";
+            document.getElementById("ms2").innerHTML = "20";
+            document.getElementById("ms3").innerHTML = "19";
+            document.getElementById("ms4").innerHTML = "18";
+            document.getElementById("ms5").innerHTML = "14";
+            document.getElementById("ms6").innerHTML = "18";
+            document.getElementById("ms7").innerHTML = "19";
+            // practical grades for subjects(Rawan)
+            document.getElementById("ps1").innerHTML = "16";
+            document.getElementById("ps2").innerHTML = "20";
+            document.getElementById("ps3").innerHTML = "18,5";
+            document.getElementById("ps4").innerHTML = "20";
+            document.getElementById("ps5").innerHTML = "15";
+            document.getElementById("ps6").innerHTML = "13,5";
+            document.getElementById("ps7").innerHTML = "20";
+            // final grades for subjects(Rawan)
+            document.getElementById("fs1").innerHTML = "55";
+            document.getElementById("fs2").innerHTML = "55";
+            document.getElementById("fs3").innerHTML = "58";
+            document.getElementById("fs4").innerHTML = "60";
+            document.getElementById("fs5").innerHTML = "58,5";
+            document.getElementById("fs6").innerHTML = "59";
+            document.getElementById("fs7").innerHTML = "51";
+            // total grades for subjects(Rawan)
+            document.getElementById("ts1").innerHTML = "85";
+            document.getElementById("ts2").innerHTML = "95";
+            document.getElementById("ts3").innerHTML = "95,5";
+            document.getElementById("ts4").innerHTML = "98";
+            document.getElementById("ts5").innerHTML = "87,5";
+            document.getElementById("ts6").innerHTML = "90,5";
+            document.getElementById("ts7").innerHTML = "90";
+            }
+            else  if(window.input1.value==name[1]&&window.input2.value==Pass[1])
+            {
+            // midterm grades for subjects(loai)
+            document.getElementById("ms1").innerHTML = "19";
+            document.getElementById("ms2").innerHTML = "13";
+            document.getElementById("ms3").innerHTML = "17";
+            document.getElementById("ms4").innerHTML = "17,5";
+            document.getElementById("ms5").innerHTML = "18,5";
+            document.getElementById("ms6").innerHTML = "16,5";
+            document.getElementById("ms7").innerHTML = "19,5";
+            // practical grades for subjects(loai)
+            document.getElementById("ps1").innerHTML = "15,5";
+            document.getElementById("ps2").innerHTML = "18";
+            document.getElementById("ps3").innerHTML = "19";
+            document.getElementById("ps4").innerHTML = "18,5";
+            document.getElementById("ps5").innerHTML = "16,5";
+            document.getElementById("ps6").innerHTML = "19,5";
+            document.getElementById("ps7").innerHTML = "18,5";
+            // final grades for subjects(loai)
+            document.getElementById("fs1").innerHTML = "59";
+            document.getElementById("fs2").innerHTML = "56";
+            document.getElementById("fs3").innerHTML = "54,5";
+            document.getElementById("fs4").innerHTML = "58,5";
+            document.getElementById("fs5").innerHTML = "55,5";
+            document.getElementById("fs6").innerHTML = "57,5";
+            document.getElementById("fs7").innerHTML = "56,5";
+            // total grades for subjects(loai)
+            document.getElementById("ts1").innerHTML = "93,5";
+            document.getElementById("ts2").innerHTML = "87";
+            document.getElementById("ts3").innerHTML = "88,5";
+            document.getElementById("ts4").innerHTML = "94,5";
+            document.getElementById("ts5").innerHTML = "90,5";
+            document.getElementById("ts6").innerHTML = "93";
+            document.getElementById("ts7").innerHTML = "94,5";
+            }
+
+            else  if(window.input1.value==name[2]&&window.input2.value==Pass[2])
+            { // midterm grades for subjects(abdelrahman)
+            document.getElementById("ms1").innerHTML = "17,5";
+            document.getElementById("ms2").innerHTML = "18";
+            document.getElementById("ms3").innerHTML = "20";
+            document.getElementById("ms4").innerHTML = "18";
+            document.getElementById("ms5").innerHTML = "16";
+            document.getElementById("ms6").innerHTML = "17,5";
+            document.getElementById("ms7").innerHTML = "19";
+            // midterm grades for subjects(abdelrahman)
+            document.getElementById("ps1").innerHTML = "19";
+            document.getElementById("ps2").innerHTML = "20";
+            document.getElementById("ps3").innerHTML = "18,5";
+            document.getElementById("ps4").innerHTML = "20";
+            document.getElementById("ps5").innerHTML = "20";
+            document.getElementById("ps6").innerHTML = "20";
+            document.getElementById("ps7").innerHTML = "20";
+            // midterm grades for subjects(abdelrahman)
+            document.getElementById("fs1").innerHTML = "59";
+            document.getElementById("fs2").innerHTML = "56,6";
+            document.getElementById("fs3").innerHTML = "58,5";
+            document.getElementById("fs4").innerHTML = "58";
+            document.getElementById("fs5").innerHTML = "58";
+            document.getElementById("fs6").innerHTML = "58,5";
+            document.getElementById("fs7").innerHTML = "57";
+            // midterm grades for subjects(abdelrahman)
+            document.getElementById("ts1").innerHTML = "95,5";
+            document.getElementById("ts2").innerHTML = "94,5";
+            document.getElementById("ts3").innerHTML = "97";
+            document.getElementById("ts4").innerHTML = "95";
+            document.getElementById("ts5").innerHTML = "94";
+            document.getElementById("ts6").innerHTML = "96";
+            document.getElementById("ts7").innerHTML = "96";
+            }
+            else{
+            alert("username or password is not correct");
+
+            }
+            }
+
+        </script>
+    </form>
+</body>
+</html>

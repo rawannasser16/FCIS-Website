@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+<style>
+body
+ {
+   margin: 0;
+   padding:0;
+   width: 1920px;
+ }
+ 
+ 
+ .div1
+ {
+  margin: 0%;
+  height:121px;
+  padding: none;
+  background-color:#000000;
+  color:#FFF;
+  margin: 0;
+  position: relative;
+  width:1920px;
+ }
+.img/*logo--------------------------------------------->*/
+ {
+   margin:500px,-50 px;
+   width:120px;
+   height:120px;
+   margin: auto;
+ }
+ .c
+ {
+  text-align:left;
+  margin-top:-100px;
+  font-size: 25px;
+  font-weight: 900;
+  font-family:"Comic Sans MS";
+ }
+ c.e
+ {
+   font-size:100px;
+   font-weight: bold;
+   font-family:"Comic Sans MS";
+ }
+  .b
+  {
+   text-align:right;
+   color:#FFF;
+   margin-left:500px;
+   margin-right:-200px;
+   margin-top:10px;
+   direction:rtl;
+   line-height:2em;
+   margin-left:-100px;
+   font-family :"times new roman";
+   }
+   /* arabic--------------------------------------عرباااااااااااااااي--------->*/
+   .aa
+   { 
+      color:#FFF;
+      margin-left:10px;
+      margin-right:10px;
+      margin-top:-90px;
+      line-height:1em;
+      font-weight: 900;
+      font-size: 30px;
+      padding-left: 10px;
+   }
+
+.box1 
+{
+    position: absolute;
+    top:230px;
+    left:100px;
+    padding: 5px;
+    background-color: gray;
+    
+}
+.box2
+{
+    position: absolute;
+    top:370px;
+    left:100px;
+    padding: 5px;
+    background-color: gray;
+}
+.box1 a,.box2 a
+{
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-indent:-9999px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+#red
+{
+    background-color: red;
+
+}
+#blue
+{
+    background-color: #00BFFF;
+}
+#green
+{
+    background-color: #006400;
+}
+#yellow
+{
+ background-color:#FFFF00;  
+}
+#orange
+{
+    background-color:#FFA500 ;
+}
+#purple
+{
+    background-color:  #800080;
+          
+}
+
+#gray
+{
+    background-color: #C0C0C0;
+}
+   .footer
+{
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  color:rgb(4, 88, 4);
+  font-family:initial;
+  font-size: 20px;
+  height: 30px;
+  margin-top: 0%;
+  width: 100%;
+  padding-top: 0%; 
+  text-align: center;
+  margin-bottom: -50px;
+
+  
+}
+.text
+{
+     height: 20px;
+
+}
+.text h1{
+    margin: 50px 100px ;
+    font-size: 25px;
+    font-family:cursive;
+    color: black;
+
+}
+.text h2{
+    margin: 120px 100px ;
+    font-size: 25px;
+    font-family:cursive;
+    color: black;
+    
+}
+
+</style>
+<script>
+function color(id)
+{
+    document.body.style.background=document.getElementById(id).innerHTML
+}
+function color1(id)
+{
+    document.getElementById('color1').style.background=document.getElementById(id).innerHTML
+}
+
+</script>
+</head>
+<body>
+    <div class="div1" id="color1" >
+        <center>
+          <img class="img"src="logo.png">
+        </center>
+       <p class="c" dir="ltr" >  Faculty of computer and  information science<br><span class="e" >Ainshams  university </span>
+       <p class="aa" dir="rtl">كـلـــيــة الـحـاسـبـات والـمـعـلـومـات<br> <span class="uni"> جـامـعـة عـيـن  شـمـس  </span></p>
+      </div> 
+     <div class="box1">
+         <a onclick="color('red')" id="red">#FF0000</a>
+         <a  onclick="color('blue')"id="blue">#00BFFF</a>
+         <a  onclick="color('green')" id="green">#006400</a>
+         <a onclick="color('yellow')" id="yellow">#FFFF00	</a>
+         <a  onclick="color('orange')"id="orange">#FFA500	</a>
+         <a  onclick="color('purple')"id="purple"> #800080	</a>
+          <a  onclick="color('gray')"id="gray">#C0C0C0	</a>
+     </div>
+    
+     <div class="box2">
+        <a onclick="color1('red')" id="red">#FF0000</a>
+        <a  onclick="color1('blue')"id="blue">#00BFFF</a>
+        <a  onclick="color1('green')" id="green">#006400</a>
+        <a onclick="color1('yellow')" id="yellow">#FFFF00	</a>
+        <a  onclick="color1('orange')"id="orange">#FFA500	</a>
+        <a  onclick="color1('purple')"id="purple">#800080	</a>
+        <a  onclick="color1('gray')"id="gray">#C0C0C0	</a>
+        
+    </div>
+    <div class="text">
+        <h1>Body background</h1>
+        <h2>header background</h2>
+    </div>
+ 
+
+
+
+
+</body>
